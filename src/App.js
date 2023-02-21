@@ -1,27 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Home';
-import About from './About';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./Home";
+import About from "./About";
+import ViewSample from "./ViewSample";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ReactDOM from "react-dom/client";
 
 function App() {
   return (
     <div>
       <nav>
-      <ul>
+        <ul>
           <li>
-              <Link to="/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-              <Link to="About">About</Link>
+            <Link to="About">About</Link>
           </li>
-      </ul>
+          <li>
+            <Link to="sample">View Sample</Link>
+          </li>
+        </ul>
       </nav>
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route path="/about" element ={<About/>}/>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/sample" element={<ViewSample />} />
       </Routes>
     </div>
   );
