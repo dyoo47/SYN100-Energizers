@@ -15,13 +15,19 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAtom, faCircleRadiation } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <>
       <Navbar className="mx-5">
-        <NavbarBrand href="/">Energizers</NavbarBrand>
+        <FontAwesomeIcon icon={faCircleRadiation} size="2x" />
+
         <Nav className="me-auto">
+          <NavItem className="d-flex align-items-center ms-3">
+            <span className="font-weight-bold">Energizers</span>
+          </NavItem>
           <NavItem>
             <NavLink tag={Link} to="/">
               Home

@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Main theme colors
+$primary: #663399;
+$secondary: #f82ed6;
+
+//Typography
+.subtitle {
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $gray-600;
+  font-weight: bold;
+}
+
+.display {
+  line-height: 1.2;
+  font-weight: 300;
+  font-size: 4.5rem;
+}
+
+.landingSection {
+  background-color: $gray-200;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.landingContainer {
+  max-width: 1400px;
+}
