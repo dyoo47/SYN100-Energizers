@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
+$font-family-sans-serif: "Poppins", sans-serif;
+$font-family-monospace: "Roboto Mono", monospace;
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Main theme colors
@@ -5,7 +9,21 @@ $primary: #663399;
 $secondary: #f82ed6;
 
 //Typography
+
+.text-black {
+  color: black;
+}
+
+.text-muted {
+  color: $gray-600;
+}
+
+.paragraph {
+  font-size: large;
+}
+
 .subtitle {
+  font-family: "Roboto Mono", monospace;
   margin-bottom: 0;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -15,8 +33,16 @@ $secondary: #f82ed6;
 
 .display {
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 4.5rem;
+}
+
+//Component styling
+
+.landingHeader {
+  background-color: $gray-200;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .landingSection {
@@ -24,7 +50,6 @@ $secondary: #f82ed6;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
-
 .landingContainer {
   max-width: 1400px;
 }

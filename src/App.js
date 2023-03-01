@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./Home";
 import About from "./About";
 import ViewSample from "./ViewSample";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import {
@@ -52,6 +53,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sample" element={<ViewSample />} />
       </Routes>
+      <Footer />
     </>
   );
 }
