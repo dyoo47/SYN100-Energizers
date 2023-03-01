@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Container, Row } from "reactstrap";
+import { Button, Card, Col, Container, Row } from "reactstrap";
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
         <Container className="landingContainer">
           <span className="subtitle">subtitle</span>
           <h1 className="display">Title</h1>
+          <Button color="primary">discover with us</Button>
         </Container>
       </section>
       <section className="landingSection bg-white">

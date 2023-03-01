@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap");
 $font-family-sans-serif: "Poppins", sans-serif;
 $font-family-monospace: "Roboto Mono", monospace;
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Main theme colors
-$primary: #663399;
-$secondary: #f82ed6;
+$theme-colors: (
+  "primary": #663399,
+  "secondary": #f82ed6,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Typography
 
@@ -38,6 +41,14 @@ $secondary: #f82ed6;
 }
 
 //Component styling
+
+.btn {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .landingHeader {
   background-color: $gray-200;

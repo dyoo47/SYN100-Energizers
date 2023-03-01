@@ -43,9 +43,7 @@ const Footer = () => {
       </section>
       <section className="py-4 text-muted bg-dark">
         <Container className="landingContainer">
-          <span>
-            Created by Adrian, Robert, Guy, Stephen, and Daniel for SYN100
-          </span>
+          <span>© 2023, Energizers Group.</span>
         </Container>
       </section>
     </>
