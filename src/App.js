@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./Home";
 import About from "./About";
 import ViewSample from "./ViewSample";
+import Curriculum from "./Curriculum";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom/client";
@@ -44,6 +45,11 @@ function App() {
               View Sample
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/curriculum">
+              Curriculum
+            </NavLink>
+          </NavItem>
         </Nav>
 
         <NavbarText className="text-end">SYN100</NavbarText>
@@ -52,6 +58,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/sample" element={<ViewSample />} />
+        <Route path="/curriculum" element={<Curriculum />} />
       </Routes>
       <Footer />
     </>

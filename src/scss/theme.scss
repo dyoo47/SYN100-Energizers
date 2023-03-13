@@ -13,12 +13,24 @@ $theme-colors: (
 
 //Typography
 
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
 .text-black {
   color: black;
 }
 
 .text-muted {
   color: $gray-600;
+}
+
+.text-sm {
+  font-size: 0.8rem;
 }
 
 .paragraph {
@@ -40,7 +52,25 @@ $theme-colors: (
   font-size: 4.5rem;
 }
 
+.title {
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 //Component styling
+
+.bg-gray-light {
+  background-color: $gray-100;
+}
+
+.bg-gray {
+  background-color: $gray-200;
+}
+
+.listItem {
+  background-color: $gray-100;
+}
 
 .btn {
   font-family: "Roboto Mono", monospace;

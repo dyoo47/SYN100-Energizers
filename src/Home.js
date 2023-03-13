@@ -15,7 +15,7 @@ const Home = () => {
         <Container className="landingContainer">
           <Row>
             <Col>
-              <div className="mb-4">
+              <div className="mb-2">
                 <span className="subtitle">subtitle</span>
               </div>
               <span className="paragraph">
