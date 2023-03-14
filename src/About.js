@@ -5,7 +5,7 @@ const About = () => {
     <h1 className="title">About</h1>
     <span className="page">
       <div className="image">
-        <img src="carbon-neutral-lead.jpg" alt="solar_panels" width={6000} className="imageSize"/>
+        <img src="carbon-neutral-lead.jpg" alt="solar_panels" width={10000} className="imageSize"/>
         <small className="small">Photo by Erik Jepsen/UC San Diego Publications</small>
       </div>
       <span className="paragraph">
