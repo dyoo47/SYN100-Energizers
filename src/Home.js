@@ -1,14 +1,90 @@
 import React from "react";
-import { Button, Card, Col, Container, Row } from "reactstrap";
+import { Button, Card, CardBody, Col, Container, Row } from "reactstrap";
+import {
+  faPenNib,
+  faLightbulb,
+  faSolarPanel,
+  faAtom,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const Badge = ({ icon, big }) => {
+  const margin = big ? "" : "mt-4";
+  return (
+    <div className={`d-flex justify-content-center mb-4 ${margin}`}>
+      <Card
+        style={
+          big
+            ? {
+                width: "150px",
+                height: "150px",
+              }
+            : {}
+        }
+        className="badgeCard border-0 m-2 align-self-center"
+      >
+        <CardBody className="d-flex justify-content-center">
+          <FontAwesomeIcon
+            icon={icon}
+            className="align-self-center"
+            size="2x"
+          />
+        </CardBody>
+      </Card>
+    </div>
+  );
+};
 
 const Home = () => {
   return (
     <>
-      <section className="landingHeader">
+      <section
+        style={{ backgroundImage: "url(images/bluemap.jpg)" }}
+        className="landingHeader"
+      >
         <Container className="landingContainer">
-          <span className="subtitle">subtitle</span>
-          <h1 className="display">Title</h1>
-          <Button color="primary">discover with us</Button>
+          <span className="subtitle">Synthesis 100</span>
+          <h1 className="display mb-3">Energizers</h1>
+          <Button color="primary">view curriculum</Button>
+        </Container>
+      </section>
+      <section className="landingSection">
+        <Container className="landingContainer">
+          <Row>
+            <span className="subtitle mb-4">Our Topic</span>
+          </Row>
+          <Row className="text-center">
+            <Col lg="4">
+              <Badge icon={faAtom} />
+              <span>
+                “What’s happened to me?” he thought. It wasn’t a dream. His
+                room, a proper human room although a little too small, lay
+                peacefully between its four familiar walls. A collection of
+                textile samples lay spread out on the table—Samsa was a
+                travelling salesman—and above it there hung a picture
+              </span>
+            </Col>
+            <Col lg="4">
+              <Badge icon={faLightbulb} big />
+              <span className="paragraph">
+                “What’s happened to me?” he thought. It wasn’t a dream. His
+                room, a proper human room although a little too small, lay
+                peacefully between its four familiar walls. A collection of
+                textile samples lay spread out on the table—Samsa was a
+                travelling salesman—and above it there hung a picture
+              </span>
+            </Col>
+            <Col lg="4">
+              <Badge icon={faSolarPanel} />
+              <span>
+                “What’s happened to me?” he thought. It wasn’t a dream. His
+                room, a proper human room although a little too small, lay
+                peacefully between its four familiar walls. A collection of
+                textile samples lay spread out on the table—Samsa was a
+                travelling salesman—and above it there hung a picture
+              </span>
+            </Col>
+          </Row>
         </Container>
       </section>
       <section className="landingSection bg-white">

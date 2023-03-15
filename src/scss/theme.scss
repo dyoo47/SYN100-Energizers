@@ -4,22 +4,13 @@ $font-family-sans-serif: "Poppins", sans-serif;
 $font-family-monospace: "Roboto Mono", monospace;
 
 //Main theme colors
-$theme-colors: (
-  "primary": #663399,
-  "secondary": #f82ed6,
-);
+
+$primary: #663399;
+$secondary: #f82ed6;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Typography
-
-.text-primary {
-  color: $primary;
-}
-
-.text-secondary {
-  color: $secondary;
-}
 
 .text-black {
   color: black;
@@ -42,7 +33,7 @@ $theme-colors: (
   margin-bottom: 0;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: $gray-600;
+  color: $secondary;
   font-weight: bold;
 }
 
@@ -84,6 +75,7 @@ $theme-colors: (
   background-color: $gray-200;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  color: white;
 }
 
 .landingSection {
@@ -93,4 +85,9 @@ $theme-colors: (
 }
 .landingContainer {
   max-width: 1400px;
+}
+
+.badgeCard {
+  width: 100px;
+  height: 100px;
 }
