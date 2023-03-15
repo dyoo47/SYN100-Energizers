@@ -40,11 +40,11 @@ function App() {
               About
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink tag={Link} to="/sample">
               View Sample
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink tag={Link} to="/curriculum">
               Curriculum

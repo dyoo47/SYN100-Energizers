@@ -1,23 +1,36 @@
 import React from "react";
 import { Card, Col, Container, Row } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const data = [
     {
-      title: "column 1",
-      links: ["link 1", "link 2", "link 3"],
+      title: "Quick Links",
+      links: [
+        { label: "Home", href: "/", router: true },
+        { label: "About", href: "/about", router: true },
+        { label: "Curriculum", href: "/curriculum", router: true },
+      ],
     },
     {
-      title: "column 2",
-      links: ["link 1", "link 2", "link 3"],
-    },
-    {
-      title: "column 3",
-      links: ["link 1", "link 2", "link 3"],
-    },
-    {
-      title: "column 4",
-      links: ["link 1", "link 2", "link 3"],
+      title: "Other ",
+      links: [
+        {
+          label: "What is Synthesis?",
+          href: "https://seventh.ucsd.edu/synthesis-program/index.html",
+          router: false,
+        },
+        {
+          label: "World-Nuclear.org",
+          href: "https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-wastes/radioactive-waste-management.aspx",
+          router: false,
+        },
+        {
+          label: "NRC.gov",
+          href: "https://www.nrc.gov/waste.html",
+          router: false,
+        },
+      ],
     },
   ];
   return (
@@ -26,14 +39,22 @@ const Footer = () => {
         <Container className="landingContainer">
           <Row>
             {data.map((entry) => (
-              <Col md="3">
+              <Col md="6">
                 <div>
-                  <span className="subtitle text-black">{entry.title}</span>
+                  <span className="subtitle text-muted">{entry.title}</span>
                 </div>
                 {entry.links.map((link) => (
                   <>
                     <br />
-                    <span className="text-muted">{link}</span>
+                    {link.router ? (
+                      <Link to={link.href}>
+                        <span className="text-muted">{link.label}</span>
+                      </Link>
+                    ) : (
+                      <a href={link.href} className="text-muted">
+                        {link.label}
+                      </a>
+                    )}
                   </>
                 ))}
               </Col>

@@ -36,7 +36,7 @@ const Curriculum = () => {
   };
   return (
     <React.StrictMode>
-      <section className="bg-gray-light">
+      <section className="bg-gray-light" style={{ overflowX: "hidden" }}>
         <Row>
           <Col lg="2">
             <ListGroup className="my-2 ms-2" flush>
