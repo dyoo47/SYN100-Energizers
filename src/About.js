@@ -23,14 +23,34 @@ const About = () => {
       <br/> <br/>
 
         Our sources we used to make our website/curriculum are: <br/>
-        <a href="url">https://www.nrc.gov/waste.html</a> <br/>
-        <a href="url">https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-wastes/radioactive-waste-management.aspx</a> <br/>
-        <a href="url">https://www.nrc.gov/waste/spent-fuel-storage.html</a> <br/>
-        <a href="url">https://www.nei.org/fundamentals/nuclear-fuel</a> <br/>
-        <a href="url">https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-power-reactors.aspx</a> <br/>
-        <a href="url">https://www.iaea.org/topics/radioactive-waste-management</a> <br/>
-        <a href="url">https://www.world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx</a> <br/>
-        <a href="url">https://ucsandiego.photoshelter.com/galleries/C0000GXkNjxnr5mo/G0000DBPQ.N_ezgc/Places-and-Landmarks</a> <br/>
+        
+          <a className="sources" href="https://www.nrc.gov/waste.html">https://www.nrc.gov/waste.html</a> <br/>
+          <a className="sources" href="https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-wastes/radioactive-waste-management.aspx">https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-wastes/radioactive-waste-management.aspx</a> <br/>
+          <a className="sources" href="https://www.nrc.gov/waste/spent-fuel-storage.html">https://www.nrc.gov/waste/spent-fuel-storage.html</a> <br/>
+          <a className="sources" href="https://www.nei.org/fundamentals/nuclear-fuel">https://www.nei.org/fundamentals/nuclear-fuel</a> <br/>
+          <a className="sources" href="https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-power-reactors.aspx">https://www.world-nuclear.org/information-library/nuclear-fuel-cycle/nuclear-power-reactors.aspx</a> <br/>
+          <a className="sources" href="https://www.iaea.org/topics/radioactive-waste-management">https://www.iaea.org/topics/radioactive-waste-management</a> <br/>
+          <a className="sources" href="https://www.world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx">https://www.world-nuclear.org/information-library/economic-aspects/economics-of-nuclear-power.aspx</a> <br/>
+          <a className="sources" href="https://ucsandiego.photoshelter.com/galleries/C0000GXkNjxnr5mo/G0000DBPQ.N_ezgc/Places-and-Landmarks">https://ucsandiego.photoshelter.com/galleries/C0000GXkNjxnr5mo/G0000DBPQ.N_ezgc/Places-and-Landmarks</a> <br/>
+          <a className="sources" href="https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf">https://www.eia.gov/outlooks/aeo/pdf/electricity_generation.pdf</a> <br/>
+          <a className="sources" href="https://www.nei.org/home">https://www.nei.org/home</a> <br/>
+          <a className="sources" href="https://www.eia.gov/todayinenergy/detail.php?id=43576">https://www.eia.gov/todayinenergy/detail.php?id=43576</a> <br/>
+          <a className="sources" href="https://www.eia.gov/energyexplained/what-is-energy/sources-of-energy.php">https://www.eia.gov/energyexplained/what-is-energy/sources-of-energy.php</a> <br/>
+          <a className="sources" href="https://ourworldindata.org/energy-production-consumption">https://ourworldindata.org/energy-production-consumption</a> <br/>
+          <a className="sources" href="https://regenpower.com/articles/can-we-power-a-big-city-with-solar-24-7/">https://regenpower.com/articles/can-we-power-a-big-city-with-solar-24-7/</a> <br/>
+          <a className="sources" href="https://www.eia.gov/tools/faqs/faq.php?id=97&t=3">https://www.eia.gov/tools/faqs/faq.php?id=97&t=3</a> <br/>
+          <a className="sources" href="https://pandreco.com/how-to-explain-embodied-energy-introducing-the-wace-weighted-average-cost-of-energy/">https://pandreco.com/how-to-explain-embodied-energy-introducing-the-wace-weighted-average-cost-of-energy/</a> <br/>
+          <a className="sources" href="https://www.engineeringtoolbox.com/co2-emission-fuels-d_1085.htmle">https://www.engineeringtoolbox.com/co2-emission-fuels-d_1085.html</a> <br/>
+          
+          
+           
+           
+          
+          
+
+            
+            
+
 
       </span>
     </span>
