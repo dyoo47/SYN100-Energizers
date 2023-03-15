@@ -11,42 +11,49 @@ import {
   ListGroupItem,
 } from "reactstrap";
 import L1 from "./lessons/L1";
-
-const Item = (props) => {
-  return (
-    <ListGroupItem className="listItem border-0" action href="#" tag="a">
-      {props.children}
-    </ListGroupItem>
-  );
-};
+import L2 from "./lessons/L2";
 
 const Curriculum = () => {
+  const [lesson, setLesson] = React.useState(1);
+  const Item = ({ children, lessonId }) => {
+    return (
+      <ListGroupItem
+        className="listItem border-0"
+        action
+        tag="button"
+        onClick={() => {
+          if (lessonId) {
+            setLesson(lessonId);
+            console.log(lesson);
+          }
+        }}
+      >
+        {children}
+      </ListGroupItem>
+    );
+  };
   return (
-    <section className="bg-gray-light">
-      <Row>
-        <Col lg="2">
-          <ListGroup className="my-2 ms-2" flush>
-            <Item>
-              <span className="subtitle">Chapter 1</span>
-              <ListGroup>
-                <Item>Lesson 1.1</Item>
-                <Item>Lesson 1.2</Item>
-                <Item>Lesson 1.3</Item>
-              </ListGroup>
-            </Item>
-            <Item>
-              <span className="subtitle">Chapter 2</span>
-            </Item>
-            <Item>
-              <span className="subtitle">Chapter 3</span>
-            </Item>
-          </ListGroup>
-        </Col>
-        <Col>
-          <L1 />
-        </Col>
-      </Row>
-    </section>
+    <React.StrictMode>
+      <section className="bg-gray-light">
+        <Row>
+          <Col lg="2">
+            <ListGroup className="my-2 ms-2" flush>
+              <Item>
+                <span className="subtitle">Chapter 1</span>
+                <ListGroup>
+                  <Item lessonId={1}>Lesson 1.1</Item>
+                  <Item lessonId={2}>Lesson 1.2</Item>
+                  <Item lessonId={3}>Lesson 1.3</Item>
+                </ListGroup>
+              </Item>
+            </ListGroup>
+          </Col>
+          <Col>
+            {lesson === 1 && <L1 />} {lesson === 2 && <L2 />}
+          </Col>
+        </Row>
+      </section>
+    </React.StrictMode>
   );
 };
 export default Curriculum;
