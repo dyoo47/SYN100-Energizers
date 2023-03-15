@@ -10,6 +10,7 @@ import {
   ListGroup,
   ListGroupItem,
 } from "reactstrap";
+import L1 from "./lessons/L1";
 
 const Item = (props) => {
   return (
@@ -42,17 +43,7 @@ const Curriculum = () => {
           </ListGroup>
         </Col>
         <Col>
-          <Card className="shadow-sm me-2 my-2 border-0">
-            <CardBody>
-              <CardTitle>
-                <span className="subtitle">Chapter 1</span>
-              </CardTitle>
-              <hr />
-              <Container>
-                <span className="title">Lesson 1.1: Lesson Title</span>
-              </Container>
-            </CardBody>
-          </Card>
+          <L1 />
         </Col>
       </Row>
     </section>

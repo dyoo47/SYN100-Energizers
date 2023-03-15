@@ -37,6 +37,15 @@ $secondary: #f82ed6;
   font-weight: bold;
 }
 
+.definition {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $gray-600;
+  font-weight: bold;
+}
+
 .display {
   line-height: 1.2;
   font-weight: bold;
