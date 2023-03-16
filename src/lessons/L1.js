@@ -1,6 +1,7 @@
 import React from "react";
 import LessonWrapper from "../components/LessonWrapper";
 import Definition from "../components/Definition";
+import ModelDisplay from "../components/ModelDisplay";
 import Label from "../components/Label";
 import { List } from "reactstrap";
 
@@ -48,6 +49,7 @@ const L1 = () => {
           <li>Illinois</li>
         </List>
       </span>
+      <ModelDisplay title="Figure 1:">A description of the model.</ModelDisplay>
       <Label>Drawbacks</Label>
       <span className="fparagraph">
         The amount of pollution that coal produces is the main reason why
