@@ -1,6 +1,7 @@
 import React from "react";
 import LessonWrapper from "../components/LessonWrapper";
 import Definition from "../components/Definition";
+import ModelDisplay from "../components/ModelDisplay";
 import Label from "../components/Label";
 import { List } from "reactstrap";
 
@@ -97,6 +98,9 @@ const L2 = () => {
           <li>Pennsylvania</li>
           <li>South Carolina</li>
         </List>
+        <ModelDisplay title="Figure 2:" model={1}>
+          Nuclear plant with football field for scale
+        </ModelDisplay>
       </span>
       <Label>Drawbacks</Label>
       <span className="fparagraph">

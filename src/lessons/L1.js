@@ -49,7 +49,9 @@ const L1 = () => {
           <li>Illinois</li>
         </List>
       </span>
-      <ModelDisplay title="Figure 1:">A description of the model.</ModelDisplay>
+      <ModelDisplay title="Figure 1:" model={0}>
+        Coal plant with football field for scale
+      </ModelDisplay>
       <Label>Drawbacks</Label>
       <span className="fparagraph">
         The amount of pollution that coal produces is the main reason why
@@ -66,6 +68,7 @@ const L1 = () => {
         can be extracted from the earth and refined to produce fuels like
         gasoline, diesel fuel, and other oils.
       </Definition>
+
       <span className="fparagraph">
         Petroleum is typically found in large deposits in the earth's crust and
         is the result of large quantities of dead organisms being buried and

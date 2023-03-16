@@ -1,6 +1,7 @@
 import React from "react";
 import LessonWrapper from "../components/LessonWrapper";
 import Definition from "../components/Definition";
+import ModelDisplay from "../components/ModelDisplay";
 import Label from "../components/Label";
 import { List } from "reactstrap";
 
@@ -50,6 +51,9 @@ const L3 = () => {
           <li>North Carolina</li>
         </List>
       </span>
+      <ModelDisplay title="Figure 3:" model={2}>
+        Solar panel with football field for scale
+      </ModelDisplay>
       <Label>Drawbacks</Label>
       <span className="fparagraph">
         The generation of solar energy releases no pollution, so the polluting
@@ -94,6 +98,9 @@ const L3 = () => {
           <li>Oklahoma</li>
         </List>
       </span>
+      <ModelDisplay title="Figure 4:" model={3}>
+        Wind mill with football field for scale
+      </ModelDisplay>
       <Label>Drawbacks</Label>
       <span className="fparagraph">
         Wind power generation produces no pollution, and generally does not have
