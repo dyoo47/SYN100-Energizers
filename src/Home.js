@@ -88,13 +88,14 @@ const Home = () => {
               </div>
               <span className="fparagraph">
                 Our web framework combines the best of traditional teaching and
-                modern technology to provide specific and interactible figures
-                for your students to interact with.
+                modern technology to provide specific and dynamic figures for
+                your students to interact with.
               </span>
             </Col>
           </Row>
         </Container>
       </section>
+
       {/* <section className="landingSection bg-white">
         <Container className="landingContainer">
           <Row>
